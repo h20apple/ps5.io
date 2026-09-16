@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+>
+
+<title>PS5 13.60 WebKit Safe Test</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+pre {
+    background: #080808;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.warning {
+    color: #ffd166;
+}
+
+.green {
+    color: #8ee28e;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>PS5 13.60 WebKit Safe Test</h1>
+
+<div class="card">
+
+<h2>Purpose</h2>
+
+<p>
+This page performs non-destructive WebKit capability tests.
+</p>
+
+<p class="warning">
+It does not attempt kernel exploitation, persistence,
+PSN access, credential collection, or firmware modification.
+</p>
+
+<button id="run">
+Run Test
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Results</h2>
+
+<pre id="output">Test has not been run.</pre>
+
+</div>
+
+<script src="poc.js"></script>
+
+</body>
+
+</html>
